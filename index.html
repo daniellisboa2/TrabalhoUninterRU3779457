@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portifólio Pessoal</title>
+
+    <link rel="stylesheet" href="bootstrap/css/main.css">
+    <!--fiz esse aquivo css e importei o bootstrap nela-->
+</head>
+
+<body>
+
+    <!--Barra de navegação -->
+    <div id="barra">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-danger ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#perfil">Perfil</a>
+                            <!--linkando pelo id de cada campo-->
+                            <a class="nav-link active" aria-current="page" href="#formacao">Formação</a>
+                            <a class="nav-link active" aria-current="page" href="#portifolio">Portifólio</a>
+                            <a class="nav-link active" aria-current="page" href="#contato">Contato</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--//Barra de navegação -->
+
+    <p></p>
+    <!--pra da um espaço-->
+
+    <!-- Perfil -->
+    <div id="perfil">
+        <div class="container fundo">
+            <div class="row ">
+                <div class="col-md-6 align-self-center text-center ">
+                    <img src="img/20220813_193003.jpg" class="img-fluid ">
+                </div>
+                <div class="col-md-6 align-self-center text-center text-light">
+                    <h2>Daniel Lisbôa</h2>
+                    <p>Me chamo Daniel , tenho 32 anos , trabalho em uma fábrica de refino e envase
+                        de óleo vegetal entre a cidade de Porto Franco e Estreito , tenho curso técnico em informática
+                        e estou cursando análise e desenvolvimento de sistemas na uninter.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- //Perfil -->
+    <p></p>
+    <p></p>
+
+    <!-- Formação academica -->
+    <div id="formacao">
+        <div class="container">
+            <!-- classe do bootstrap para delimititar os itens dentro da div -->
+            <!-- organizado em uma linha e 2 colunas , para em cada linha colocar um texo e uma imagem 
+            por isso duas colunas -->
+
+            <div class="row">
+                <!-- 1 linha -->
+                <h2 class="text-center">Formação profissional</h2>
+                <div class="col-md-4 align-self-center text-center">
+                    <!--1 coluna p/ o texto dentro da 1 linha  -->
+                    <h2 class="text-center">IFMA</h2>
+                    <!--titulo do texto -->
+                    <P> Realizei o curso técnico em informática pelo IFMA de Porto Franco
+                        <!--paragrafo com o texto -->
+                        onde conheci as linguagens de programação, banco de dados e varias
+                        outras disciplinas
+                    </P>
+                </div>
+                <div class="col-md-8 align-self-center text-center">
+                    <!--2 coluna p/ a imagem dentro da 1 linha  -->
+                    <img src="img/ifma2.png" class="img-fluid">
+                    <!-- classe para ajustar a imagem na div dentro do container-->
+                </div>
+                <div class="row">
+                    <!-- 2 linha -->
+                    <div class="col-md-4 align-self-center">
+                        <!--1 coluna p/ o texto dentro da 2 linha -->
+                        <h2 class="text-center">UNINTER</h2>
+                        <P> Estou realizando o curso de técnologo em análise e desenvolvimento de
+                            sistemas de forma a distância , de modo a conciliar o meu desenvolvimento
+                            profissional e o trabalho.
+                        </P>
+                    </div>
+                    <div class="col-md-8 align-self-center text-center">
+                        <!--2 coluna p/ a imagem dentro da 2 linha  -->
+                        <img src="img/uninter.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Formação academica -->
+
+
+
+        <!-- contato -->
+        <footer id="contato">
+            <p></p>
+            <h2 class="text-center">Contato</h2>
+            <p></p>
+            <div class="container">
+                <div class="email">
+                    <img src="img/icons8-email-64.png" class="img-fluid">
+                    <h2 class="text-center"> Sugestões e reclamações </h2>
+                    <h4 class="text-center">entre em contato conosco e nos dê Sugestões ou reclamações </h4>
+
+                    <form  class="flex-grow-1 w-100" id="form">
+                        <div class=" flex-md-grow-0 pr-md-3 pb-md-0 pb-3">
+                            <label for="msg" class="sr-only">Digite sua mensagem:</label>
+                            <input class="form-control" type="text" id="msg" placeholder="digite aqui">
+                            <small  id="msg-erro"></small> <!-- recebe o que foi digitado no input-->
+                        </div>
+
+                        <div class="flex-grow-1 flex-md-grow-0">
+                            <button type="submit" onclick="pegarNome()" class="btn btn-info button mb-3 d-md-inline d-block w100">
+                                
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- portifolio -->
+                <div id="portifolio">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <h4>click na imagem e veja meu perfil no gitlab:</h4>
+
+                        </div>
+                        <div class="col-md-6">
+                            <a href="https://gitlab.com/Daniellisboa"><img src="img/icons8-gitlab-48.png "
+                                    class="img-fluid "></a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /portifolio  -->
+
+
+
+        </footer>
+
+        <!--// contato -->
+
+
+
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/action.js"></script>
+</body>
+
+</html>
